@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Fires in Australia</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link rel="stylesheet" href="../static/css/style.css">
+      </head>
+    
+      <body>
+        <div class="wrapper">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Australian Fires
+                </a>
+              </div>
+            </div>
+          </nav>
+          <div class="hero text-center">
+            <h1>Fires in Australia</h1>
+            <p>August 2019 - September 2019</p>
+          </div>
+          <div class="container">
+            <div class="row margin-top-50">
+              <div class="row">
+              <div class="col-md-2">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">Data Source Details</div>
+                    <div class="panel-body">
+                      The chart to the right visualizes the fire radiative power of Australian
+                      fires from the time period of August 2019 - September 2019. 
+                      The data was captured by the NASA satelite Modis C6.
+                    </div>
+                  </div>
+                </aside>
+              </div>
+              <div class="col-md-10">
+                <div id="hc_heatmap" style="height: 400px"></div>
+                <figure class="highcharts-figure">
+                <div id="hc_heatmap"></div>
+                <p class="highcharts-description">
+                 
+              </div>
+            </div>
+            <div>
+            <div class="row">
+            <div class="col-md-5">
+                <div class="panel panel-default">
+                  <div class="panel-heading">What is Fire Radiative Power?</div>
+                  <div class="panel-body">
+                    Fire Radiative Power (FRP) is a measure of the rate of radiant heat output from a fire 
+                    (Roberts & Wooster "SEVIRI Fire Radiative Power (FRP) Dataset"). It is used to quantify burned biomass. 
+                    Quantifying biomass is important because it helps estimate the amount of smoke caused by the fire. 
+                    Smoke has detrimental effects on local humans and animals as well as larger consequences for the environment.
+                  </div>
+                </div>
+              </aside>
+            </div>
+            <div class="col-md-7">
+            <img src="../static/images/smoke.jpg" width="450" height="">
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div id="bar" style="height: 400px"></div>
+               
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div id="scatter" style="height: 400px"></div>
+               
+            </div>
+          </div>
+
+          
+
+        </div>
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+        <script src="https://code.highcharts.com/highcharts.src.js"></script>
+        <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="../static/js/app_hc.js"></script>
+        <script src="/static/js/app_bars.js"></script>
+    </body>
+
+    </html>
+
